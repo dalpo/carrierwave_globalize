@@ -2,15 +2,14 @@
 
 Use Globalize to manage Carrierwave translated fields.
 
-#### Disclaimer:
-This is an early implementation and could contain some bugs.
+**Disclaimer:** This is an early implementation and could contain some bugs.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'carrierwave_globalize'
+gem 'carrierwave_globalize', github: 'dalpo/carrierwave_globalize'
 ```
 
 And then execute:
@@ -22,8 +21,7 @@ And then execute:
 
 After the definition of your `Globalize` translates attributes, extend your model with the `CarrierwaveGlobalize` module and use the `mount_translated_uploader` class method to mount your carrierwave uploader.
 
-**Example**
-Given an `Asset` model with a translated column `attachment`:
+**Example:** Given an `Asset` model with a translated column `attachment`.
 
 ```ruby
 class Asset < ApplicationRecord
