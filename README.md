@@ -1,8 +1,9 @@
-# CarrierwaveGlobalize
+# Carrierwave Globalize
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/carrierwave_globalize`. To experiment with that code, run `bin/console` for an interactive prompt.
+Use Globalize to manage Carrierwave translated fields.
 
-TODO: Delete this and the text above, and describe your gem
+#### Disclaimer:
+This is an early implementation and could contain some bugs.
 
 ## Installation
 
@@ -14,15 +15,26 @@ gem 'carrierwave_globalize'
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
-Or install it yourself as:
-
-    $ gem install carrierwave_globalize
 
 ## Usage
 
-TODO: Write usage instructions here
+After the definition of your `Globalize` translates attributes, extend your model with the `CarrierwaveGlobalize` module and use the `mount_translated_uploader` class method to mount your carrierwave uploader.
+
+**Example**
+Given an `Asset` model with a translated column `attachment`:
+
+```ruby
+class Asset < ApplicationRecord
+  extend CarrierwaveGlobalize
+
+  # Globalize translated attributes
+  translates :attachment
+
+  mount_translated_uploader :attachment, AttachmentUploader
+end
+```
 
 ## Development
 
@@ -32,10 +44,9 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/carrierwave_globalize. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/dalpo/carrierwave_globalize. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
