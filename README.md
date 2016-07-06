@@ -1,6 +1,6 @@
 # Carrierwave Globalize
 
-[![Build Status](https://travis-ci.org/dalpo/carrierwave_globalize.svg?branch=master)](https://travis-ci.org/dalpo/carrierwave_globalize) [![Code Climate](https://codeclimate.com/github/dalpo/carrierwave_globalize/badges/gpa.svg)](https://codeclimate.com/github/dalpo/carrierwave_globalize)
+[![Gem Version](https://badge.fury.io/rb/carrierwave_globalize.svg)](https://badge.fury.io/rb/carrierwave_globalize) [![Code Climate](https://codeclimate.com/github/dalpo/carrierwave_globalize/badges/gpa.svg)](https://codeclimate.com/github/dalpo/carrierwave_globalize) [![Build Status](https://travis-ci.org/dalpo/carrierwave_globalize.svg?branch=master)](https://travis-ci.org/dalpo/carrierwave_globalize)
 
 Use Globalize to manage Carrierwave translated fields.
 
@@ -11,7 +11,7 @@ Use Globalize to manage Carrierwave translated fields.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'carrierwave_globalize', github: 'dalpo/carrierwave_globalize'
+gem 'carrierwave_globalize', '~> 0.1.0'
 ```
 
 And then execute:
