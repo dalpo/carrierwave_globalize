@@ -5,8 +5,15 @@ class CreateAllTables < ActiveRecord::Migration
     end
 
     create_table(:asset_translations) do |t|
-      t.string :attachment
+      t.string   :attachment
+      t.integer  :asset_id,   null: false
+      t.string   :locale,     null: false
+      t.datetime :created_at, null: false
+      t.datetime :updated_at, null: false
     end
+
+    add_index :asset_translations, :asset_id
+    add_index :asset_translations, :locale
   end
 end
 

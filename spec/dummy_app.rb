@@ -9,6 +9,9 @@ app.config.secret_token = '00cd5b5b19431a54b3ec65452e0483abf18dab42783ea0835f466
 app.config.session_store :cookie_store, :key => '_dummy_app_session'
 app.config.active_support.deprecation = :log
 app.config.eager_load = false
+app.config.i18n.available_locales = [:en, :it]
+app.config.i18n.default_locale = :en
+
 # Rais.root
 app.config.root = File.dirname(__FILE__)
 Rails.backtrace_cleaner.remove_silencers!
