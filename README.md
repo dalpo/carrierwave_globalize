@@ -1,6 +1,6 @@
 # Carrierwave Globalize
 
-[![Gem Version](https://badge.fury.io/rb/carrierwave_globalize.svg)](https://badge.fury.io/rb/carrierwave_globalize) [![Code Climate](https://codeclimate.com/github/dalpo/carrierwave_globalize/badges/gpa.svg)](https://codeclimate.com/github/dalpo/carrierwave_globalize) [![Build Status](https://travis-ci.org/dalpo/carrierwave_globalize.svg?branch=master)](https://travis-ci.org/dalpo/carrierwave_globalize)
+[![Gem Version](https://badge.fury.io/rb/carrierwave_globalize.svg)](https://badge.fury.io/rb/carrierwave_globalize) [![Code Climate](https://codeclimate.com/github/dalpo/carrierwave_globalize/badges/gpa.svg)](https://codeclimate.com/github/dalpo/carrierwave_globalize) [![Test Coverage](https://codeclimate.com/github/dalpo/carrierwave_globalize/badges/coverage.svg)](https://codeclimate.com/github/dalpo/carrierwave_globalize/coverage) [![Build Status](https://travis-ci.org/dalpo/carrierwave_globalize.svg?branch=master)](https://travis-ci.org/dalpo/carrierwave_globalize)
 
 Use Globalize to manage Carrierwave translated fields.
 
