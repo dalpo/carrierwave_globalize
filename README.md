@@ -19,7 +19,7 @@ And then execute:
 
 ## Usage
 
-After the definition of your `Globalize` translates attributes, extend your model with the `CarrierwaveGlobalize` module and use the `mount_translated_uploader` class method to mount your carrierwave uploader.
+After the definition of your `Globalize` translated attributes, extend your model with the `CarrierwaveGlobalize` module and use the `mount_translated_uploader` class method to mount your carrierwave uploader.
 
 **Example:** Given an `Asset` model with a translated column `attachment`.
 
