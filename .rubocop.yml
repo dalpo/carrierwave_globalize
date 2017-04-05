@@ -1,0 +1,18 @@
+AllCops:
+  TargetRubyVersion: 2.4
+
+  Include:
+    - '**/Rakefile'
+    - '**/Gemfile'
+
+  Exclude:
+    - 'carrierwave_globalize.gemspec'
+    - 'spec/tmp/**/*'
+    - 'spec/public/**/*'
+    - 'spec/log/**/*'
+    - 'spec/dummy_app/**/*'
+    - 'spec/dummy_app/**/*'
+    - 'spec/dummy_app.rb'
+    - 'bin/**/*'
+    - 'coverage/**/*'
+    - 'pkg/**/*'
