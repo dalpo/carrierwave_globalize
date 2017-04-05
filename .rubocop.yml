@@ -1,0 +1,15 @@
+AllCops:
+  Include:
+    - '**/Rakefile'
+    - '**/Gemfile'
+
+  Exclude:
+    - 'spec/tmp/**/*'
+    - 'spec/public/**/*'
+    - 'spec/log/**/*'
+    - 'spec/dummy_app/**/*'
+    - 'bin/**/*'
+    - 'coverage/**/*'
+    - 'pkg/**/*'
+
+  TargetRubyVersion: 2.4
