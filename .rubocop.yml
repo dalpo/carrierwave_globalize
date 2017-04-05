@@ -1,9 +1,12 @@
 AllCops:
+  TargetRubyVersion: 2.4
+
   Include:
     - '**/Rakefile'
     - '**/Gemfile'
 
   Exclude:
+    - 'carrierwave_globalize.gemspec'
     - 'spec/tmp/**/*'
     - 'spec/public/**/*'
     - 'spec/log/**/*'
@@ -13,5 +16,3 @@ AllCops:
     - 'bin/**/*'
     - 'coverage/**/*'
     - 'pkg/**/*'
-
-  TargetRubyVersion: 2.4

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'carrierwave'
 
 # Manage CarrierWave and Globalize to work together

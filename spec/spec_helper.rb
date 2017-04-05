@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # rubocop:disable Lint/HandleExceptions
 require 'simplecov'
 SimpleCov.start

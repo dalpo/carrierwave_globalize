@@ -1,4 +1,6 @@
 # coding: utf-8
+# frozen_string_literal: true
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'carrierwave_globalize/version'
@@ -9,8 +11,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Andrea Dal Ponte']
   spec.email         = ['info@andreadalponte.com']
 
-  spec.summary       = %q{Use Globalize to manage Carrierwave translated fields}
-  spec.description   = %q{Use Globalize to manage Carrierwave translated fields}
+  spec.summary       = 'Use Globalize to manage Carrierwave translated fields'
+  spec.description   = 'Use Globalize to manage Carrierwave translated fields'
   spec.homepage      = 'https://github.com/dalpo/carrierwave_globalize'
   spec.license       = 'MIT'
 

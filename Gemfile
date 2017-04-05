@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 source 'https://rubygems.org'
 
 # Specify your gem's dependencies in carrierwave_globalize.gemspec
@@ -7,7 +8,7 @@ gemspec
 gem 'activerecord-jdbcsqlite3-adapter', platform: :jruby
 gem 'carrierwave'
 gem 'pry'
-gem 'sqlite3', platforms: [:ruby, :rbx]
+gem 'sqlite3', platforms: %i[ruby rbx]
 
 platforms :rbx do
   gem 'rubinius-developer_tools'
