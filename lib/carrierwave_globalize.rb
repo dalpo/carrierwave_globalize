@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 require 'carrierwave'
-require 'carrierwave/mount'
 
 # Manage CarrierWave and Globalize to work together
 module CarrierwaveGlobalize
@@ -38,7 +37,13 @@ module CarrierwaveGlobalize
     def _translations_mounter(column)
       @_translations_mounter ||= {}
       (@_translations_mounter[Globalize.locale.to_sym] ||= {})[column] ||= \
-        ::CarrierWave::Mount::Mounter.new(self, column)
+        if defined?(CarrierWave::Mounter)
+          # CarrierWave >= 1.0.0
+          ::CarrierWave::Mounter.new(self, column)
+        else
+          # CarrierWave < 1.0.0
+          ::CarrierWave::Mount::Mounter.new(self, column)
+        end
     end
   end
 end

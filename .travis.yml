@@ -6,7 +6,7 @@ rvm:
   - 2.1.9
   - 2.2.5
   - 2.3.3
-  - 2.4.0
+  - 2.4.1
   - jruby
   - rbx-2
   - ruby-head
@@ -26,3 +26,5 @@ cache: bundler
 addons:
   code_climate:
     repo_token: f86575690ba75e81107a310a79ec158a4dbac013cd17c46dcb97c2dfae817fcc
+
+script: bundle exec rake && bundle exec codeclimate-test-reporter

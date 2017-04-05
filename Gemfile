@@ -6,6 +6,7 @@ gemspec
 gem 'activerecord-jdbcsqlite3-adapter', platform: :jruby
 gem 'sqlite3', platforms: [:ruby, :rbx]
 gem 'pry'
+gem 'carrierwave'
 
 platforms :rbx do
   gem 'rubysl', '~> 2.0'
@@ -17,5 +18,6 @@ group :debug do
 end
 
 group :test do
-  gem 'codeclimate-test-reporter', require: nil
+  gem 'simplecov'
+  gem 'codeclimate-test-reporter', '~> 1.0.0'
 end
