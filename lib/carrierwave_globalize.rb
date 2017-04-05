@@ -8,10 +8,10 @@ module CarrierwaveGlobalize
     delegate :"#{column}_will_change!", :"#{column}_changed?",
              to: :translation
 
-    unless carrierwave_globalize_initialized?
-      include CarrierwaveGlobalize::InstanceMethods
-      @carrierwave_globalize_initialized = true
-    end
+    return if carrierwave_globalize_initialized?
+
+    include CarrierwaveGlobalize::InstanceMethods
+    @carrierwave_globalize_initialized = true
   end
 
   def carrierwave_globalize_initialized?

@@ -8,6 +8,8 @@ AllCops:
     - 'spec/public/**/*'
     - 'spec/log/**/*'
     - 'spec/dummy_app/**/*'
+    - 'spec/dummy_app/**/*'
+    - 'spec/dummy_app.rb'
     - 'bin/**/*'
     - 'coverage/**/*'
     - 'pkg/**/*'
