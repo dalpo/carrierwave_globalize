@@ -36,5 +36,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec-rails', '~> 3.5'
   spec.add_development_dependency 'rspec-its'
   spec.add_development_dependency 'database_cleaner'
-  spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'rubocop', '~> 0.48.1'
 end
