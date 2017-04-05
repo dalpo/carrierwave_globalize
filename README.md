@@ -11,7 +11,7 @@ Use Globalize to manage Carrierwave translated fields.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'carrierwave_globalize', '~> 0.1.0'
+gem 'carrierwave_globalize', '~> 0.2.0'
 ```
 
 And then execute:
