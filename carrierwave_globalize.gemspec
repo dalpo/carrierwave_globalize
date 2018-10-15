@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', '~> 1.12'
   spec.add_development_dependency 'rake', '~> 10.0'
-  spec.add_development_dependency 'rails', ['>= 4.2', '< 5.1']
+  spec.add_development_dependency 'rails', ['>= 4.2', '< 6.0']
   spec.add_development_dependency 'rspec-rails', '~> 3.5'
   spec.add_development_dependency 'rspec-its'
   spec.add_development_dependency 'database_cleaner'
