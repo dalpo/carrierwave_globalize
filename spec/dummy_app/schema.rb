@@ -1,4 +1,4 @@
-class CreateAllTables < ActiveRecord::Migration
+class CreateAllTables < ActiveRecord::Migration[4.2]
   def self.up
     create_table(:assets) do |t|
       t.string :name
