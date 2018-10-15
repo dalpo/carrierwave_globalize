@@ -17,3 +17,9 @@
 ## Changes
 
 ### v0.2.1 (15 October 2018)
+
+* [CHANGE] [#7](https://github.com/dalpo/carrierwave_globalize/pull/7) Relax rails dependency constraint.
+
+### v0.2.0
+
+View GIT history...
